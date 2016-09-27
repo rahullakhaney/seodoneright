@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
     @meta_title = meta_title 'Ruby on Rails SEO Done Right'
+    @meta_description = 'Comprehensive SEO Guide for Ruby on Rails Applications'
   end
 
   # GET /articles/1
