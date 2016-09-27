@@ -5,11 +5,13 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    @meta_title = meta_title 'Ruby on Rails SEO Done Right'
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @meta_title = meta_title @article.title
   end
 
   # GET /articles/new
